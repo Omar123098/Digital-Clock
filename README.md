@@ -62,17 +62,25 @@ Each decimal digit is implemented using flip-flops:
 
 #### T Flip-Flop from D Flip-Flop
 
-A D flip-flop can mimic a T flip-flop by feeding `Q'` back into `D`:
-
-T Flip-Flop Truth Table:
-T | Q_next
-0 | Q (No change)
-1 | ~Q (Toggle)
-
-D = T ⊕ Q → For T = 1 → D = ~Q → D = Q'
+We can simulate a T flip-flop using a D flip-flop by wiring the complement output (`Q'`) back to the data input (`D`):
 
 
-So we connected `Q'` to `D`, effectively toggling the output each clock pulse. The output of one flip-flop (e.g., `Q'`) can be used as the clock input to the next stage to divide the frequency.
+### 🧮 T Flip-Flop Behavior Using D Flip-Flop
+
+| T | Q (Current) | Q_next       | Description     |
+|---|-------------|--------------|-----------------|
+| 0 | Q           | Q            | No change       |
+| 1 | Q           | ~Q (Toggle)  | Inverts output  |
+
+To mimic a T flip-flop using a D flip-flop:
+
+D = T ⊕ Q
+
+When T = 1:
+→ D = ~Q → D = Q'
+
+
+So we connect `Q'` directly to `D` to achieve toggling behavior.
 
 ---
 
