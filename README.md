@@ -132,8 +132,4 @@ AM/PM toggle logic remains the same.
 - Display logic preserved using 7447 + 7-segment.
 
 ## 📸 Screenshots
-
-You can add screenshots of the simulation and breadboard in the `images/` folder and embed them like:
-
-```markdown
-![Breadboard View](images/clock_preview.png)
+![Breadboard View](clock_preview.jpg)
