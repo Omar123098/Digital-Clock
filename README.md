@@ -133,3 +133,4 @@ AM/PM toggle logic remains the same.
 
 ## 📸 Screenshots
 ![Breadboard View](clock_preview.jpg)
+![Proteus View](proteus_preview.jpg)
