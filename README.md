@@ -60,7 +60,7 @@ Each decimal digit is implemented using flip-flops:
 - **Tens of Seconds/Minutes** – 3 flip-flops (0–5)
 - **Tens of Hours** – 1 flip-flop (0–1)
 
-#### ⛓ T Flip-Flop from D Flip-Flop
+#### T Flip-Flop from D Flip-Flop
 
 A D flip-flop can mimic a T flip-flop by feeding `Q'` back into `D`:
 
