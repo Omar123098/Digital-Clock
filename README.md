@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a **digital clock (HH:MM:SS)** that resets every 12 hours and includes an **AM/PM extension**. It was implemented and simulated using **Proteus** with D Flip-Flops, decoders, and gates, and later built on a breadboard using **7490 Decade Counters**. 
+This project is a **digital clock (PM/AM HH : MM : SS)** that resets every 12 hours and includes an **AM/PM extension**. It was implemented and simulated using **Proteus** with D Flip-Flops, decoders, and gates, and later built on a breadboard using **7490 Decade Counters**. 
 
 This project was an excellent learning journey in digital electronics: using and/or/not gates, flip-flop behavior, reset logic, 7-segment displays, and simplification of logic circuits.
 
@@ -11,13 +11,14 @@ This project was an excellent learning journey in digital electronics: using and
 ## What I Learned
 
 - Designing a clock system from scratch using digital logic
-- Frequency generation using 555 timer
-- Using D flip-flops to simulate T flip-flop behavior
-- Binary counting and overflow detection
-- Reset logic using combinational gates
-- Decoding BCD to display on 7-segment
-- Managing AM/PM toggling with clock resets
-- Replacing flip-flop logic with decade counters for easier implementation
+- Sequential logic design and binary counting principles
+- Frequency generation using a 555 timer (1Hz pulse)
+- Simulating T flip-flops using D flip-flops with XOR simplification
+- Carry and reset mechanism implementation
+- BCD to 7-segment decoding via 7447 ICs
+- AM/PM toggling logic
+- Circuit simplification techniques for breadboarding
+- Differences between simulation and physical implementation
 
 ---
 
