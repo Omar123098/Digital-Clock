@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a **digital clock (PM/AM HH : MM : SS)** that resets every 12 hours and includes an **AM/PM extension**. It was implemented and simulated using **Proteus** with D Flip-Flops, decoders, and gates, and later built on a breadboard using **7490 Decade Counters**. 
+This project is a **digital clock (PM/AM : HH : MM : SS)** that resets every 12 hours and includes an **AM/PM extension**. It was implemented and simulated using **Proteus** with D Flip-Flops, decoders, and gates, and later built on a breadboard using **7490 Decade Counters**. 
 
 This project was an excellent learning journey in digital electronics: using and/or/not gates, flip-flop behavior, reset logic, 7-segment displays, and simplification of logic circuits.
 
