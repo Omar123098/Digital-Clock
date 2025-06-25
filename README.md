@@ -1,4 +1,4 @@
-# 🕒 Digital Clock Using Digital Logic Components
+# Digital Clock Using Digital Logic Components
 
 ## Project Overview
 
@@ -8,7 +8,7 @@ This project was an excellent learning journey in digital electronics: using and
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 - Designing a clock system from scratch using digital logic
 - Frequency generation using 555 timer
@@ -21,9 +21,9 @@ This project was an excellent learning journey in digital electronics: using and
 
 ---
 
-## ⚙️ Components Used
+## Components Used
 
-### 🧪 Proteus Simulation
+### Proteus Simulation
 - 555 Timer – 1
 - 100μF Capacitor – 1
 - 4.7kΩ Resistors – 2
@@ -33,7 +33,7 @@ This project was an excellent learning journey in digital electronics: using and
 - NOT Gates – 3 ICs
 - AND Gates – 3 ICs
 
-### 🧰 Breadboard Implementation
+### Breadboard Implementation
 - Decade Counters (7490) – 7
 - 555 Timer – 1
 - 100μF Capacitor – 1
@@ -45,15 +45,15 @@ This project was an excellent learning journey in digital electronics: using and
 
 ---
 
-## 🔄 Clock Logic Explanation
+## Clock Logic Explanation
 
-### 1. ⏱ Frequency Generation – 555 Timer
+### 1. Frequency Generation – 555 Timer
 
 - Used in **astable mode** to generate a 1Hz pulse (1 pulse per second).
 - Achieved using: 555 Timer + 100μF capacitor + 2× 4.7kΩ resistors.
 - This pulse is fed into the clock input of the least significant flip-flop.
 
-### 2. 🧮 Counting Logic with D Flip-Flops
+### 2. Counting Logic with D Flip-Flops
 
 Each decimal digit is implemented using flip-flops:
 - **Units of Seconds/Minutes/Hours** – 4 flip-flops (0–9)
@@ -76,23 +76,23 @@ So we connected `Q'` to `D`, effectively toggling the output each clock pulse. T
 
 ---
 
-### 3. ♻️ Reset Logic
+### 3. Reset Logic
 
 - Each decimal digit resets after reaching its max (9 for units, 5 for tens).
 
-#### 🧠 Reset Implementation:
+#### Reset Implementation:
 - Use **AND gates** to detect a binary pattern (e.g., `1010` = 10).
 - Use **NOT gates** to invert bits as needed.
 - Feed the final signal to the **Reset** pins of the flip-flops (active low).
 
-#### 🕓 Special Case – Reset After 12 Hours
+#### Special Case – Reset After 12 Hours
 - Detect when **Hours = 12 (Binary: Tens = 1, Units = 0010)**.
 - Use an AND gate to combine these conditions.
 - Reset all counters and toggle AM/PM flip-flop.
 
 ---
 
-### 4. 🌓 AM/PM Extension
+### 4. AM/PM Extension
 
 - A single D flip-flop toggled on every 12-hour cycle.
 - Output connected to **segment C** of a 7-segment display:
@@ -103,7 +103,7 @@ Only segment C is used (others tied to VCC/GND), effectively displaying a light 
 
 ---
 
-## 🔁 Alternative Implementation: Using 7490 Decade Counters
+## Alternative Implementation: Using 7490 Decade Counters
 
 To simplify the circuit on the breadboard, we replaced flip-flop counters with 7490 ICs.
 
@@ -122,15 +122,15 @@ AM/PM toggle logic remains the same.
 
 ---
 
-## 🖥 Circuit Designs
+## Circuit Designs
 
-### ✅ Proteus
+### Proteus
 - Implemented with individual flip-flops, AND/NOT logic gates, and 7447 decoders.
 
-### 🔌 Breadboard
+### Breadboard
 - Used 7490 counters and simplified reset logic.
 - Display logic preserved using 7447 + 7-segment.
 
-## 📸 Screenshots
+## Screenshots
 ![Breadboard View](clock_preview.jpg)
 ![Proteus View](proteus_preview.png)
