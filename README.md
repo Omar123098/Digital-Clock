@@ -66,7 +66,7 @@ Each decimal digit is implemented using flip-flops:
 We can simulate a T flip-flop using a D flip-flop by wiring the complement output (`Q'`) back to the data input (`D`):
 
 
-### 🧮 T Flip-Flop Behavior Using D Flip-Flop
+### T Flip-Flop Behavior Using D Flip-Flop
 
 | T | Q (Current) | Q_next       | Description     |
 |---|-------------|--------------|-----------------|
