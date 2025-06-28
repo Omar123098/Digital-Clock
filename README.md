@@ -143,5 +143,3 @@ AM/PM toggle logic remains the same.
 ## Screenshots
 ![Breadboard View](clock_preview.jpg)
 ![Proteus View](proteus_preview.png)
-Video in 2x:
-![Video in proteus](vedio_preview.mp4)
